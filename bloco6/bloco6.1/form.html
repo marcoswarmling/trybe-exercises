@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<fieldset>
+   Nome: <input type="text" id="name" maxlength="40" class="list" required >
+   <br>
+   <br>
+   Email: <input type="email" name="emailuser" id="emailuser" maxlength="50" class="list" required>
+   <br>
+   <br>
+   CPF: <input type="tel" name="cpf" id="cpf" maxlength="11" class="list" required>
+    <br>
+    <br>
+    Endereço: <input type="text" name="address" id="address" maxlength="200" class="list" required>
+    <br>
+    <br>
+    Cidade : <input type="text" name="city" id="city" maxlength="28" class="list" required>
+    <br>
+    <br>
+    <select name="state" id="state" class="list" >
+        <option value='state'>Estado</option>
+        <option value="rj">Rio De Janeiro</option>
+        <option value="sp">São Paulo</option>
+        <option value="rs">Rio grande Do Sul</option>
+        <option value="pr">Parana</option>
+    </select>
+
+    <label for="home">
+    <input type="radio" name="home" id="home" > Casa 
+</label>
+<label for="ap">
+    <input type="radio" name="home" id="ap"> Apartamento 
+</label>
+</fieldset>
+<fieldset>
+<textarea name="curriculum" id="curriculum" cols="30" rows="20" maxlength="1000" placeholder="resumo do curriculo"  class="list" required></textarea>
+<br>
+<br>
+Cargo: <input type="text" id="office"  class="list" required>  
+<input type="date" name="start" id="start" class="list" required>
+</fieldset>
+<button type="submit" id="submit" preventDefault()>enviar</button>
+<button type="submit" id="clean" preventDefault()>apagar</button>
+<br>
+<br>
+<div id="resul"></div>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
